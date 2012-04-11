@@ -1,0 +1,10 @@
+{
+  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "name": "node-in-the-industry",
+  "description": "The \"Node in the Industry\" portion of the website",
+  "version": "0.0.1",
+  "homepage": "http://nodejs.org/",
+  "repository": "git@github.com:joyent/node-in-the-industry.git",
+  "bin": "main.js",
+  "dependencies": { "trumpet": "" }
+}
