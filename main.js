@@ -24,8 +24,8 @@ var html = select.map(function (company) {
 }).join("\n")
 
 index.pipe(trumpet())
-.select("div#quotes ul", function (ul) {
-  ul.update(function () { return html })
+.select("div#quotes", function (div) {
+  div.update(function () { return '<h2>Node.js in the Industry</h2><ul>' + html + '</ul><h2 style="clear:both"><a href="/industry/">More...</a></h2>' })
 })
 .pipe(fs.createWriteStream(".index.html"))
 .on("close", function () {
