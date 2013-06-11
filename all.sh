@@ -19,7 +19,9 @@ shuffle() {
 }
 
 array=($(echo data/*))
-shuffle
+if [ "$NOSHUFFLE" != "1" ]; then
+  shuffle
+fi
 
 for company in "${array[@]}"; do
   name=${company#data/}
