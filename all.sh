@@ -8,7 +8,7 @@ shuffle() {
 
   # $RANDOM % (i+1) is biased because of the limited range of $RANDOM
   # Compensate by using a range which is a multiple of the array size.
-  size=${#array}
+  size=${#array[@]}
   max=$(( 32768 / size * size ))
 
   for ((i=size-1; i>0; i--)); do
