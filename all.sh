@@ -28,7 +28,7 @@ for company in "${array[@]}"; do
   img=$company/logo.png
   quote=$company/quote.html
   cat <<END
-  <div class="row clearfix">
+  <div class="row clearfix" id="$name">
     <p><img src="$img" alt="$name"></p>
 END
   cat $quote
