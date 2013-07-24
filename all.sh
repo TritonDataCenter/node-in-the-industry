@@ -26,10 +26,6 @@ fi
 for company in "${array[@]}"; do
   name=${company#data/}
   img=$company/logo.png
-  img2=$company/logo@2x.png
-  if [ -f $img2 ]; then
-    img=$img2
-  fi
   quote=$company/quote.html
   cat <<END
   <div class="row clearfix" id="$name">

@@ -7,8 +7,7 @@ Probably!
 
 Send your request in the form of a pull request.  It must add a folder
 at `data/<mycompany>` (where `<mycompany>` is the name of your company),
-containing a `quote.html` file, a `logo.png` file, and a double-sized
-`logo@2x.png` file for retina display.
+containing a `quote.html` file and a `logo.png` file.
 
 The `quote.html` file should be just like the others: about 20 words
 explaining why node is a good fit at your company, from a technical
@@ -18,14 +17,15 @@ truncated or exerpted or rejected, at Joyent's sole discretion.  The
 HTML markup in the quote.html may be modified if necessary, at the sole
 discretion of Joyent and the Node.js Project.
 
-The `logo.png` file MUST be 34px tall, and no more than 170px wide.
-The `logo@2x.png` file MUST be 68px tall, and no more than 340px wide.
-It should be JUST your official company logo and the (R) or (TM)
-symbol, in a single color: `rgb(210,216,186)` on `rgb(51,52,45)`, with
-appropriate antialiasing.  It MUST NOT contain any additional texture,
-taglines, highlighting.  It may be edited to better accomodate the
-needs of the web page design, or for any other reason, at the sole
-discretion of Joyent and the Node.js Project.
+The `logo.png` file MUST be 68px tall, and no more than 340px wide.
+(This is double the size on the page.  It'll be resized down for the
+benefit of retina displays.) It should be JUST your official company
+logo and the (R) or (TM) symbol, in a single color: `rgb(210,216,186)`
+on `rgb(51,52,45)`, with appropriate antialiasing.  It MUST NOT
+contain any additional texture, taglines, highlighting.  It may be
+edited to better accomodate the needs of the web page design, or for
+any other reason, at the sole discretion of Joyent and the Node.js
+Project.
 
 You can test your addition by running the following bash command:
 
