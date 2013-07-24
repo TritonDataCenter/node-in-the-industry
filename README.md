@@ -24,7 +24,7 @@ It should be JUST your official company logo and the (R) or (TM)
 symbol, in a single color: `rgb(210,216,186)` on `rgb(51,52,45)`, with
 appropriate antialiasing.  It MUST NOT contain any additional texture,
 taglines, highlighting.  It may be edited to better accomodate the
-needs of the web page design, or for any othe reason, at the sole
+needs of the web page design, or for any other reason, at the sole
 discretion of Joyent and the Node.js Project.
 
 You can test your addition by running the following bash command:
