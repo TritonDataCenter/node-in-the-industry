@@ -8,7 +8,7 @@ shuffle() {
 
   # $RANDOM % (i+1) is biased because of the limited range of $RANDOM
   # Compensate by using a range which is a multiple of the array size.
-  size=${#array}
+  size=${#array[@]}
   max=$(( 32768 / size * size ))
 
   for ((i=size-1; i>0; i--)); do
@@ -19,15 +19,17 @@ shuffle() {
 }
 
 array=($(echo data/*))
-shuffle
+if [ "$NOSHUFFLE" != "1" ]; then
+  shuffle
+fi
 
 for company in "${array[@]}"; do
   name=${company#data/}
   img=$company/logo.png
   quote=$company/quote.html
   cat <<END
-  <div class="row clearfix">
-    <p><img src="$img" alt="$name"></p>
+  <div class="row clearfix" id="$name">
+    <p><img src="$img" height=34 alt="$name"></p>
 END
   cat $quote
   cat <<END

@@ -18,7 +18,7 @@ var html = select.map(function (company) {
   var quote = path.resolve(compdir, "quote.html")
   var logo = path.relative(process.cwd(), compdir) + "/logo.png"
   return '<li class="' + company + '">' +
-    '<img src="' + logo + '" alt="logo">' +
+    '<img src="' + logo + '" alt="logo" height=34>' +
     fs.readFileSync(quote) +
     '</li>'
 }).join("\n")
