@@ -1,7 +1,5 @@
 
-**Note:** This repository is no longer used as part of the nodejs.org website. The new repository for the nodejs.org website cane be found here: https://github.com/nodejs/nodejs.org.
-
-https://github.com/nodejs/nodejs.org
+**Note: This repository is no longer used as part of the nodejs.org website. The new repository for the nodejs.org website can be found here: https://github.com/nodejs/nodejs.org.**
 
 This is the thing that updates the "node in the industry" section on the
 node homepage, by picking 4 items at random.
